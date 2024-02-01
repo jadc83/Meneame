@@ -1,7 +1,8 @@
 <x-app-layout>
     @php
     $article = App\Models\Article::find(1);
-    $fuente =$article->link
+    $fuente =$article->link;
+    dd($article->meneos);
     @endphp
-<x-noticia :article="$article"></x-noticia>
+
 </x-app-layout>
